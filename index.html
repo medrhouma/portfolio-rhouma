@@ -3,69 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Rhouma Mohamed</title>
+    <title>Rhouma Mohamed - Développeur Web Professionnel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Rhouma Mohamed</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#cv">CV</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">RM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="vh-100 d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-1 mb-3">Rhouma Mohamed</h1>
+            <p class="lead mb-4">Développeur Web Passionné & Créatif</p>
+            <a href="#projects" class="btn btn-primary btn-lg">Voir mes projets</a>
+        </div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Je suis un développeur web passionné par la création d'applications web innovantes et performantes.</p>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">À propos de moi</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="profile-image.jpg.jpg" alt="Rhouma Mohamed" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="lead">Je suis un développeur web passionné par la création d'applications web innovantes et performantes. Avec une solide formation en informatique et une expérience pratique dans divers projets, je suis constamment à la recherche de nouveaux défis pour améliorer mes compétences et créer des solutions impactantes.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Mes Compétences</h2>
-            <ul>
-                <li>Front-end: HTML, CSS, JavaScript, Angular</li>
-                <li>Back-end: C, PHP, MySQL</li>
-                <li>Outils: Git</li>
-            </ul>
+        <section id="skills" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Mes Compétences</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><i class="fas fa-laptop-code"></i> Front-end</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success"></i> HTML5 & CSS3</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> JavaScript (ES6+)</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Angular</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Responsive Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><i class="fas fa-server"></i> Back-end</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success"></i> C</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> PHP</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> MySQL</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> RESTful APIs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title text-center"><i class="fas fa-tools"></i> Outils & Autres</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success"></i> Git & GitHub</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Agile/Scrum</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> VS Code</li>
+                                    <li><i class="fas fa-check-circle text-success"></i> Postman</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Mes Projets</h2>
-            <article>
-                <h3>Archibald</h3>
-                <p>Description du projet Archibald</p>
-            </article>
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Mes Projets</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="project1.png" class="card-img-top" alt="Projet Archibald">
+                            <div class="card-body">
+                                <h5 class="card-title">Archibald</h5>
+                                <p class="card-text">Description détaillée du projet Archibald, mettant en avant les technologies utilisées et les défis relevés.</p>
+                                <a href="#" class="btn btn-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ajoutez d'autres projets ici -->
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contactez-moi</h2>
-            <form>
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Contactez-moi</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="cv">
-            <h2>Mon CV</h2>
-            <a href="cv-rhouma-mohamed.pdf">Télécharger mon CV (PDF)</a>
+        <section id="cv" class="py-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Mon CV</h2>
+                <a href="cv-rhouma-mohamed.pdf" class="btn btn-secondary btn-lg" download>Télécharger mon CV (PDF)</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Rhouma Mohamed. Tous droits réservés.</p>
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Rhouma Mohamed. Tous droits réservés.</p>
+            <div class="social-icons mt-3">
+                <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-light me-3"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
